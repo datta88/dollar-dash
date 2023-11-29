@@ -1,0 +1,30 @@
+
+.app-container{
+  position: relative;
+  padding: 10px 20px;
+  margin: 30px 100px;
+  font-size: 30px;
+  box-shadow: 0 0 5px 2px gainsboro;
+}
+.category-container{
+  position: absolute;
+  top: 10px;
+  right:20px;
+}
+.type-container{
+  font-size: 18px;
+}
+.credit-con{
+  color: green;
+}
+.debit-con{
+color: red;
+}
+.date-container{
+  font-size: 16px;
+  margin-left: 40px;
+}
+.time-container{
+  font-size: 16px;
+  margin-left: 10px;
+}

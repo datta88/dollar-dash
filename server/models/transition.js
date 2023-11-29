@@ -1,6 +1,11 @@
 import { Schema, model } from "mongoose";
 
 const transitionSchema = new Schema({
+    user:{
+        type:Schema.Types.ObjectId,
+        ref: "user",
+        required:true,
+    },
     amount:{
         type:Number,
         required:true
@@ -12,7 +17,7 @@ const transitionSchema = new Schema({
     },
     category:{
         type:String,
-        enum:["shopping", "food", "reat", "entertainment", "travel", "other"],
+        enum:["shopping", "food", "rent", "entertainment", "travel", "other","education"],
         default:"other"
     },
     description:{
@@ -20,7 +25,7 @@ const transitionSchema = new Schema({
     }
 },
 {
-    timeStamps:true,
+    timestamps: true
 }
 )
 const transition = model ("transition ",transitionSchema);
