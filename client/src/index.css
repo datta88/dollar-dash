@@ -1,4 +1,5 @@
 body {
+  background-color: hsl(180, 100%, 95%);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.btn{
+  padding: 10px 25px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #660033;
+  color: white;
+  
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: #5c5c3d;
+}
+.font{
+  font-weight: 400;
 }

@@ -1,0 +1,14 @@
+.footer-container{
+    background-color: #003333;
+    height: 250px;
+    color: #fff;
+}
+.flex-con{
+    display:flex;
+    justify-content: space-around;
+}
+.font-size-h{
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}

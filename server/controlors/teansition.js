@@ -4,12 +4,13 @@ import {responder} from "./../util.js";
 import User from "../models/user.js";
 
 const postApiTransiton = async (req, res) => {
-    const { amount, type, description, category } = req.body
+    const { amount, type, description, category,user } = req.body
     const savedata = new Transition({
         amount,
         type,
         description,
-        category
+        category,
+        user
     })
 
     try {
@@ -41,7 +42,7 @@ const getApiTransition = async (req, res) => {
             data:transitionFind
         });
     }
-    catch (e) {
+    catch(e) {
         return responder({
             res,
             success:false,
@@ -60,9 +61,7 @@ const postApiSignup = async (req, res) => {
         password,
         gender,
     })
-
     const saved = await user.save();
-
     try {
         return res.json({
             success: true,
@@ -81,7 +80,7 @@ const postApiSignup = async (req, res) => {
 const postApiLogin =  async (req, res) => {
     const { email, password } = req.body;
 
-    const user = await User.findOne({ email: email, password: password });
+    const user = await User.findOne({ email: email, password: password }).select('name mobile email');
 
     if (user) {
         return res.json({
@@ -112,8 +111,12 @@ const getApiTransitionById =  async (req, res) => {
 const getApiTransitionUserById = async (req, res) => {
 
     try {
-        const { _id } = req.params;
-        const userId = await Transition.find({ user:_id }).populate('user')
+        const {id} = req.params;
+        const userId = await Transition.find({ user:id }).populate('user')
+
+        // userId?.forEach((sigletransition)=>{
+        //     sigletransition?.user?.password = undefined;
+        // })
 
         res.json({
             success: true,
@@ -129,4 +132,50 @@ const getApiTransitionUserById = async (req, res) => {
     }
 }
 
-export {postApiTransiton, getApiTransition, postApiSignup, postApiLogin, getApiTransitionById, getApiTransitionUserById}
+const deleteApiTransition =  async (req,res)=>{
+    const {_id}= req.params
+await Transition.deleteOne({_id:_id});
+    try{
+       return res.json({
+            success:true,
+            message:'Transition Delete SuccessFully'
+        })
+    }
+    catch(e){
+        return res.json({
+            success:false,
+            message:e.message
+        })
+    }
+}
+
+const updateApiTransition =  async (req,res)=>{
+
+    const {_id} = req.params;
+    const { amount, type, category, description} = req.body;
+
+    await Transition.updateOne({_id:_id},{
+        $set:{
+            amount:amount,
+            type:type,
+            category:category, 
+            description:description
+        }
+    });
+    const updateData = await Transition.findOne({_id:_id})
+
+    try{
+        return res.json({
+            success:true,
+            data:updateData,
+            message:'Update successfully'
+        })
+    }
+    catch(e){
+        return res.json({
+            success:false, 
+            message:e.message
+        })
+    }
+}
+export {postApiTransiton, getApiTransition, postApiSignup, postApiLogin, getApiTransitionById, getApiTransitionUserById, deleteApiTransition, updateApiTransition}

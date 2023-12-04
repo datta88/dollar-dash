@@ -1,0 +1,54 @@
+.body {
+    margin: 0px;
+    padding: 0px;
+}
+.simbol{
+    font-size: 60px;
+}
+
+.navbar-container {
+    background-color:#003333;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px #a3a375;
+
+}
+
+.link-container{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+   
+}
+
+.link-container:hover{
+    color: gold;
+}
+.logout-con{
+    font-size: 25px;
+    padding-left: 120px;
+}
+.log-out-container{
+    display: flex;
+    align-items: center;
+   cursor: pointer;
+   color: #fff;
+  }
+  .log-out-container:hover{
+    
+  }
+  .user-size-logout{
+    font-size: 25px;
+    
+  }
+  .user-size-logout:hover{
+   color: gold;    
+  }
+  .font-hover:hover{
+    color: gold;
+  }
+  
+  
+  

@@ -3,8 +3,9 @@ import { Schema, model } from "mongoose";
 const transitionSchema = new Schema({
     user:{
         type:Schema.Types.ObjectId,
-        ref: "user",
-        required:true,
+        ref: 'User',
+        required:true
+      
     },
     amount:{
         type:Number,

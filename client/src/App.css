@@ -3,14 +3,16 @@
   position: relative;
   padding: 10px 20px;
   margin: 30px 100px;
+  width: 35%;
   font-size: 30px;
-  box-shadow: 0 0 5px 2px gainsboro;
+  box-shadow: 0 0 5px 2px #d6d6c2;
+  background: #fff;
 }
-.category-container{
+/* .category-container{
   position: absolute;
   top: 10px;
-  right:20px;
-}
+  right:100px;
+} */
 .type-container{
   font-size: 18px;
 }
@@ -27,4 +29,31 @@ color: red;
 .time-container{
   font-size: 16px;
   margin-left: 10px;
+}
+.cr-dr-container{
+  width: fit-content;
+  margin: 40px 100px;
+}
+.cr-dr-amount{
+  font-size: 40px;
+  font-weight: 400;
+}
+.delete-btn{
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right:10px;
+}
+.img-con{
+  height: 35px;
+}
+.update-img-container{
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right:10px;
+}
+
+@media screen and (max-width:768px){
+  
 }

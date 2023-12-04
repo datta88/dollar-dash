@@ -1,0 +1,107 @@
+
+.mytransition-container{
+    width: fit-content;
+    background: #fff;
+    padding: 10px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.text-center-add-con{
+    display: block;
+    margin: 10px auto;
+    font-weight: 600;
+    border-bottom:3px solid black ;
+    width: fit-content;
+}
+.select-container-add{
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    display: block;
+    margin: 40px;
+    padding: 5px 20px;
+}
+
+.input-amount-container{
+    font-size: 10px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 30px;
+    padding: 5px 20px;
+   
+}
+.crdr-flex{
+    display: flex;
+    align-items: center;
+}
+.paragraph-add-container{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    margin: 30px;
+    width: 110px;
+}
+.btn-add{
+    display: block;
+    margin: 20px auto;
+}
+.flex-box{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.font-style{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.width-add{
+    width: 100px;
+}
+
+@media screen and (max-width:768px){
+    .mytransition-container{
+        width: fit-content;
+        background: #fff;
+        padding: 10px 10px;
+        margin: 25px auto;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    .text-center-add-con{      
+        text-align: center;
+    }
+    .select-container-add{
+        font-size: 18px;
+        border: none;
+        border-bottom: 1px solid black;
+        display: block;
+        margin: 30px;
+        padding: 5px 20px;
+    }
+    
+    .input-amount-container{
+        font-size: 20px;
+        display: block;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 30px ;
+        padding: 5px 10px;
+       
+    } 
+    .font-style{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .width-add{
+        width: 150px;
+    }
+    .paragraph-add-container{
+        font-size: 18px;
+        border-bottom: 1px solid black;
+        margin: 20px;
+        width: 100px;
+        
+    }
+}
