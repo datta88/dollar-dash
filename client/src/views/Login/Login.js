@@ -2,6 +2,7 @@ import react, { useEffect, useState } from 'react';
 import './Login.css';
 import axios from 'axios';
 import Navbar from '../../componant/Navbar/Navbar';
+import Footer from '../../componant/Footer/Footer';
 
 function Login (){
     const [email, setEmail] = useState('')
@@ -44,6 +45,7 @@ function Login (){
                     <button type='button' className='btn btn-login' onClick={loadLogin} >Login</button>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

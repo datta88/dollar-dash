@@ -1,14 +1,45 @@
-.footer-container{
-    background-color: #003333;
-    height: 250px;
-    color: #fff;
+.footer-container {
+    background-color: #ff9980;
+    height: fit-content;
+    
+    color: black;
 }
-.flex-con{
-    display:flex;
+.footer-con-main{
+    background-color: #ff9980;
+    
+    color: black;
+}
+
+.flex-con {
+    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.font-size-h{
+
+
+.font-size-h {
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
+}
+.font-size-footer-h-tag{
+    font-weight: 700;
+}
+.font-footer-simboll{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .flex-con {
+        display: block;
+        flex-direction: column;
+        margin-bottom: 400px;
+    }
+    .footer-container {
+        background-color: #ff9980;
+        height:fit-content;
+        color: black;
+        padding: 20px 40px;
+    }
 }

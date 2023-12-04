@@ -3,6 +3,7 @@ import Navbar from "../../componant/Navbar/Navbar";
 import App from "../../App"; 
 import Auth from './../../util/auth.js'
 import './Mytransition.css';
+import Footer from "../../componant/Footer/Footer.js";
 
 function Mytransition(){
     useEffect(()=>{
@@ -15,7 +16,7 @@ function Mytransition(){
 
                 <h1 className="text-center-mycontainer">Mytransition</h1>
                 <App/>
-                
+                <Footer/>                
             </div>
         </>
     )

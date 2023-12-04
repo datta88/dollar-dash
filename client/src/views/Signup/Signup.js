@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import './Signup.css';
 import axios from 'axios'
 import Navbar from "../../componant/Navbar/Navbar";
+import Footer from "../../componant/Footer/Footer";
 
 function Signup() {
     const [name, setName] = useState('');
@@ -76,6 +77,7 @@ function Signup() {
                 <button type="button" className="btn btn-signup" onClick={loadSignup}>signup</button>
 
             </div>
+            <Footer/>
         </>
     )
 }

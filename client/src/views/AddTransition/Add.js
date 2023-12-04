@@ -4,6 +4,7 @@ import './Add.css';
 import Navbar from "../../componant/Navbar/Navbar";
 import Auth from './../../util/auth.js'
 import axios from 'axios'
+import Footer from "../../componant/Footer/Footer.js";
 
 function Add() {
 
@@ -87,13 +88,13 @@ function Add() {
                             <h1 className="font-style">Description :</h1>
                         </div>
                         <div>
-                            <textarea className=" input-amount-container width-add" type="text" onChange={(e) => { setDescription(e.target.value) }}  ></textarea>
+                            <textarea className=" input-amount-container width-add  " type="text" onChange={(e) => { setDescription(e.target.value) }}  ></textarea>
                         </div>
                     </div>
 
                     <div className="flex-box ">
                         <div >
-                            <h1 className="font-style">Type :</h1>
+                            <h1 className="font-style margin-add-type">Type :</h1>
                         </div>
                         <div>
                             <div className="crdr-flex">
@@ -113,9 +114,10 @@ function Add() {
 
                 </div>
                 <div className=" btn-add">
-                    <button className="btn btn-add" type="button" onClick={loaddata}>Push</button>
+                    <button className="btn btn-add" type="button" onClick={loaddata}>Add </button>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
