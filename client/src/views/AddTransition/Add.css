@@ -1,21 +1,20 @@
-
-.mytransition-container{
+.mytransition-container {
     width: 400px;
     background: #fff;
     padding: 10px 20px;
     margin: 100px auto;
     border-radius: 10px;
-    /* border: 1px solid #ff3300; */
-    box-shadow:0px 0px 7px 0px #ffc2b3;
+    box-shadow: 0px 0px 7px 0px #ffc2b3;
 }
-.text-center-add-con{
+
+.text-center-add-con {
     display: block;
     margin: 10px auto;
     font-weight: 600;
-    /* border-bottom:3px solid black ; */
     width: fit-content;
 }
-.select-container-add{
+
+.select-container-add {
     font-size: 20px;
     border: none;
     border-bottom: 1px solid black;
@@ -24,49 +23,55 @@
     padding: 5px 20px;
 }
 
-.input-amount-container{
+.input-amount-container {
     font-size: 20px;
     display: block;
     border: none;
     border-bottom: 1px solid black;
     margin: 30px;
     padding: 5px 20px;
-   
+
 }
-.crdr-flex{
+
+.crdr-flex {
     display: flex;
     align-items: center;
 }
-.paragraph-add-container{
+
+.paragraph-add-container {
     font-size: 20px;
     border-bottom: 1px solid black;
     margin: 30px;
     width: 75px;
 }
-.btn-add{
+
+.btn-add {
     display: block;
     margin: 20px auto;
     font-size: 30px;
 }
-.flex-box{
+
+.flex-box {
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
 }
-.font-style{
+
+.font-style {
     font-size: 25px;
     font-weight: 400;
 }
 
-.width-add{
+.width-add {
     width: 100px;
 }
-.margin-add-type{
+
+.margin-add-type {
     margin-left: 18px;
 }
 
-@media screen and (max-width:768px){
-    .mytransition-container{
+@media screen and (max-width:768px) {
+    .mytransition-container {
         width: fit-content;
         background: #fff;
         padding: 10px 10px;
@@ -74,10 +79,12 @@
         border-radius: 10px;
         font-size: 13px;
     }
-    .text-center-add-con{      
+
+    .text-center-add-con {
         text-align: center;
     }
-    .select-container-add{
+
+    .select-container-add {
         font-size: 18px;
         border: none;
         border-bottom: 1px solid black;
@@ -85,29 +92,31 @@
         margin: 30px;
         padding: 5px 20px;
     }
-    
-    .input-amount-container{
+
+    .input-amount-container {
         font-size: 20px;
         display: block;
         border: none;
         border-bottom: 1px solid black;
-        margin: 30px ;
+        margin: 30px;
         padding: 5px 10px;
-       
-    } 
-    .font-style{
+
+    }
+
+    .font-style {
         font-size: 18px;
         font-weight: 500;
     }
-    
-    .width-add{
+
+    .width-add {
         width: 150px;
     }
-    .paragraph-add-container{
+
+    .paragraph-add-container {
         font-size: 18px;
         border-bottom: 1px solid black;
         margin: 20px;
         width: 100px;
-        
+
     }
 }

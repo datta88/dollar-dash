@@ -3,9 +3,6 @@ import './App.css';
 import axios from 'axios';
 import Img from './dustbin.png';
 import Imgwritting from './writing.png'
-import { json } from 'react-router-dom';
-//import Update from './views/Update/Update.js'
-
 function App() {
 
   const [transition, setTransition] = useState([]);
@@ -75,7 +72,6 @@ function App() {
         <h2 className='cr-dr-amount'>Credit : {credit}</h2>
         <h2 className='cr-dr-amount'>Debit : {debit}</h2>
       </div>
-      {/* <div className='flex-transtion'> */}
       <div className='flex-transtion'>
         {
           transition?.map((transition, i) => {
@@ -120,7 +116,6 @@ function App() {
           })
         }
       </div>
-      {/* </div> */}
     </>
   );
 }

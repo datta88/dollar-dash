@@ -4,12 +4,12 @@ import Footer from "../../componant/Footer/Footer";
 import Navbar from "../../componant/Navbar/Navbar";
 import Img from './many.jpg'
 
-function Home(){
-    return(
-        <>  
-            <Navbar/>
-            <img src={Img}  className="img-home"/>
-            <Footer/>
+function Home() {
+    return (
+        <>
+            <Navbar />
+            <img src={Img} className="img-home" />
+            <Footer />
         </>
     )
 }

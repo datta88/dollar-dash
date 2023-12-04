@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 // import User from './models/user.js';
 import dotenv from "dotenv";
 import { getApiHealth } from './controlors/health.js';
+import path from 'path';
 import { postApiTransiton, getApiTransition, postApiSignup, postApiLogin, getApiTransitionById, getApiTransitionUserById , deleteApiTransition, updateApiTransition} from './controlors/teansition.js'
 
 dotenv.config();
@@ -45,6 +46,16 @@ app.delete('/api/transition/delete/:_id' , deleteApiTransition);
 
 //------put update transition id --------
 app.put('/api/transition/:_id' ,updateApiTransition);
+
+const __dirname = path.resolve();
+
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static(path.join(__dirname, '..', 'cli', 'build')));
+
+    app.get('*',(req,res)=>{
+        res.sendFile(path.join(__dirname, '..', 'cli', 'build', 'index.html'))
+    })
+}
 
 const PORT = process.env.PORT || 5000;
 

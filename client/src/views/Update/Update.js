@@ -123,11 +123,6 @@ function Update() {
                                     <input type="radio" value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" />
                                     </p>
                                 </div>
-                                {/* <label className='ms-3 type-text'>Type:- </label>
-                                <input type='radio'  value="credit" checked={type === "credit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value)}}}/>
-                                 <label className='type-text'>
-                                    Credit</label> */}
-
                             </div>
                         </div>
                     </div>

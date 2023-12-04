@@ -99,14 +99,14 @@ function Add() {
                         <div>
                             <div className="crdr-flex">
                                 <div>
-                                    <p className="paragraph-add-container ">credit 
-                                    <input type="radio" value="credit" checked={type === "credit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" />
-                                     </p>
+                                    <p className="paragraph-add-container ">credit
+                                        <input type="radio" value="credit" checked={type === "credit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" />
+                                    </p>
                                 </div>
                                 <div>
                                     <p className="paragraph-add-container">Debit
-                                    <input type="radio" value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" />
-                                     </p>
+                                        <input type="radio" value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" />
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ function Add() {
                     <button className="btn btn-add" type="button" onClick={loaddata}>Add </button>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

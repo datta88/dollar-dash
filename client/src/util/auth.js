@@ -6,8 +6,7 @@ const Auth= async()=>{
         window.location.href = '/login'
     }
 return(
-    <>
-        
+    <>  
     </>
 )
 }
