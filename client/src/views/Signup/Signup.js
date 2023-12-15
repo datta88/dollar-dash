@@ -70,7 +70,7 @@ function Signup() {
                 <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" className="input-box" />
                 <input type="password" value={password} onChange={(e) => { setPassword(e.target.value) }} placeholder="password" className="input-box" />
                 <div cla>
-                    <p className="radio-container">male <input type="radio" onChange={(e) => { setGender(e.target.value) }} checked='male' className="input-radio" value="male" name="gender" /></p>
+                    <p className="radio-container">male <input type="radio" onChange={(e) => { setGender(e.target.value) }} checked='male' className="input-radio" value="male" name="gender" /> </p>
                     <p className="radio-container">female <input type="radio" onChange={(e) => { setGender(e.target.value) }} className="input-radio" value="female" name="gender" /></p>
                 </div>
 

@@ -20,7 +20,7 @@ function Navbar() {
                 <div className="navbar-container">
 
                     <div className="navbar-flex-c">
-                        <div ><p className="simbol ">💲 Dollar Dash 💸</p></div>
+                        <div ><p className="simbol ">💲 Dollar Dash 💸 </p></div>
                         <div className="flex">
                             <div>
                                 <Link to='/' className="link-container">Home</Link>
@@ -34,7 +34,7 @@ function Navbar() {
 
                                 <p className="font-hover">
                                     {
-                                        user?.name ? <span className="logout-con" onClick={() => { localStorage.removeItem('user'); window.localStorage.href = '/login'; }}  >LogOut
+                                        user?.name ? <span className="logout-con" onClick={() => {localStorage.removeItem('user'); window.localStorage.href = '/login'; }}  >LogOut
                                         </span> : null
                                     }
                                 </p>

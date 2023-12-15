@@ -84,19 +84,19 @@ function App() {
                 <div >
                   <div className='app-container ' key={i}>
 
-                    
-                      <div>
-                        <span className={` margin  ${type === 'credit' ? 'credit-con' : 'debit-con'}`}>{type === "credit" ? '+' : '-'}{amount}          </span>
-                        <span className='type-container'>        {type === 'credit' ? 'Credited' : 'Debited'}</span>
-                      </div>
-                      
-                   
 
-                    <span className='description-container margin'>     {description}</span>
+                    <div>
+                      <span className={` amount-position margin  ${type === 'credit' ? 'credit-con' : 'debit-con'}`}>  {type === "credit" ? '+' : '-'}{amount}          </span>
+                      <span className={`type-container ${type === 'credit' ? 'credit-bg' : 'debit-bg'}`}>        {type === 'credit' ? 'Credited' : 'Debited'}</span>
+                    </div>
+
+
+
+                    <div className='discription-margin'><span className='description-container margin'>     {description}</span></div>
                     <hr />
                     <div className='flex-date'>
-                    <span className='category-container margin'>       {ALL_EMOJI[category]} {category}</span>
-                    <div className='margin position-date-time'>
+                     <div className=' margin-category'> <span className='category-container'>       {ALL_EMOJI[category]} {category}</span></div>
+                      <div className='margin position-date-time responsive-date-time'>
                         <span className='date-container'>Date :         {date},</span>
                         <span className='time-container'>Time :        {time} </span>
                       </div>
