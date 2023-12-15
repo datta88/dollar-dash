@@ -13,7 +13,8 @@ function Footer() {
                     <div >
                         <h2 className="font-size-footer-h-tag">Information 👇</h2>
                         <div>
-                            <p className="font-size-information"> Using an Expense Tracker is <br />
+                            <p className="font-size-information">
+                                 Using an Dollar-Dash is <br />
                                 like having a personal financial<br />
                                 assistant. It helps you spend <br />
                                 wisely, save more, and achieve<br />
