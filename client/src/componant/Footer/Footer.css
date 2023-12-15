@@ -1,10 +1,11 @@
 .footer-container {
     background-color: #ff9980;
     height: fit-content;
-    
+
     color: black;
 }
-.footer-con-main{
+
+.footer-con-main {
     background-color: #ff9980;
     border: 1px solid #ff9980;
     color: black;
@@ -18,28 +19,63 @@
 
 
 .font-size-h {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 400;
     cursor: pointer;
 }
-.font-size-footer-h-tag{
-    font-weight: 700;
+
+.font-size-footer-h-tag {
+    font-weight: 600;
+    font-size: 22px;
+
 }
-.font-footer-simboll{
-    font-weight: 400;
-    font-size: 40px;
+
+.font-footer-simboll {
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.font-size-information {
+    font-size: 20px;
 }
 
 @media screen and (max-width:768px) {
     .flex-con {
         display: block;
         flex-direction: column;
-        margin-bottom: 400px;
     }
+
     .footer-container {
         background-color: #ff9980;
-        height:fit-content;
+        height: fit-content;
         color: black;
         padding: 20px 40px;
+    }
+
+    .font-size-h {
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .font-size-footer-h-tag {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .font-footer-simboll {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    .font-footer-simboll {
+        font-weight: 600;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .font-size-information {
+        font-size: 18px;
     }
 }

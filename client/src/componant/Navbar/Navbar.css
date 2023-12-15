@@ -3,9 +3,9 @@
     padding: 0px;
 }
 
-.simbol {
-    font-size: 40px;
-
+.simbol-nav {
+    font-size: 25px;
+    font-weight: 700;
 }
 
 .navbar-flex-c {
@@ -27,10 +27,9 @@
 .link-container {
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    padding: 10px 50px;
-    margin: 5px 20px;
-
+    font-size: 22px;
+    padding: 1px 40px;
+    margin: 0px 0px;
 }
 
 .link-container:hover {
@@ -38,9 +37,8 @@
 }
 
 .logout-con {
-    font-size: 25px;
+    font-size: 22px;
     padding: 5px 40px;
-
     margin-left: 40px;
 }
 
@@ -49,13 +47,15 @@
     align-items: center;
     cursor: pointer;
     color: black;
+    margin-right: 10px;
+    height: 50px;
 }
 
 .log-out-container:hover {}
 
 .user-size-logout {
-    font-size: 25px;
-
+    font-size: 22px;
+    margin-left: 70px;
 }
 
 .user-size-logout:hover {
@@ -71,13 +71,20 @@
         background-color: #ffc2b3;
         height: fit-content;
         width: 100%;
+        height: fit-content;
         box-shadow: 0px 0px 10px 0px #a3a375;
-        padding: 10px;
+        padding: 20px;
 
     }
 
     .flex {
         display: block;
+    }
+
+    .simbol-nav {
+        font-size: 25px;
+        font-weight: 600;
+
     }
 
     .navbar-flex-c {
@@ -87,9 +94,10 @@
     .link-container {
         text-decoration: none;
         color: black;
-        font-size: 25px;
+        font-size: 18px;
         display: block;
-        margin: 20px 0px;
+        margin: 5px 0px;
+        padding: 6px;
 
     }
 
@@ -104,23 +112,20 @@
         color: black;
     }
 
-    .logout-con {
-        font-size: 205px;
-    }
-
     .simbol {
         font-size: 40px;
         text-align: center;
     }
 
     .logout-con {
-        font-size: 25px;
-        margin-left: 20px;
+        font-size: 18px;
+        margin-left: -40px;
+
     }
 
     .user-size-logout {
-        font-size: 25px;
-        margin-left: 50px;
+        font-size: 18px;
+        margin-left: -0px;
         color: #000000;
     }
 

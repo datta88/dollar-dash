@@ -20,21 +20,22 @@ function Navbar() {
                 <div className="navbar-container">
 
                     <div className="navbar-flex-c">
-                        <div ><p className="simbol ">💲 Dollar Dash 💸 </p></div>
+
                         <div className="flex">
-                            <div>
-                                <Link to='/' className="link-container">Home</Link>
-                                <Link to='/transition' className="link-container">Mytransition</Link>
-                                <Link to='/add' className="link-container" >AddTransition</Link>
-                                <Link to='/signup' className="link-container" >Signup</Link>
-                                <Link to='/login' className="link-container" >Login </Link>
+                            <div className="flex">
+                                <div ><p className="simbol-nav ">💲 Dollar Dash 💸 </p></div>
+                                <div > <Link to='/' className="link-container">Home</Link></div>
+                                <div >  <Link to='/transition' className="link-container">Mytransition</Link></div>
+                                <div > <Link to='/add' className="link-container" >AddTransition</Link></div>
+                                <div > <Link to='/signup' className="link-container" >Signup</Link></div>
+                                <div > <Link to='/login' className="link-container" >Login </Link></div>
                             </div>
                             <div className="log-out-container">
                                 <p ><h2 className="font user-size-logout">Hello{"  "}{user?.name || "user"}🖐🏻 </h2></p>
 
                                 <p className="font-hover">
                                     {
-                                        user?.name ? <span className="logout-con" onClick={() => {localStorage.removeItem('user'); window.localStorage.href = '/login'; }}  >LogOut
+                                        user?.name ? <span className="logout-con" onClick={() => { localStorage.removeItem('user'); window.localStorage.href = '/login'; }}  >LogOut
                                         </span> : null
                                     }
                                 </p>
