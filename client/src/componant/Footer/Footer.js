@@ -7,37 +7,43 @@ function Footer() {
     return (
         <>
             <div className="footer-con-main">
-                <h1 className="text-center font-footer-simboll">💲 Dollar Dash 💸</h1>
-                <div className="footer-container flex-con">
-
-                    <div >
-                        <h2 className="font-size-footer-h-tag">Information 👇</h2>
+                <span className="brand-title">💲 Dollar Dash 💸</span>
+                <div >
+                    
+                    <div className="footer-all-information">
+                        <div></div>
                         <div>
-                            <p className="font-size-information">
-                                 Using an Dollar-Dash is <br />
-                                like having a personal financial<br />
-                                assistant. It helps you spend <br />
-                                wisely, save more, and achieve<br />
-                                your dreams faster. So, start<br />
-                                tracking and take control of<br />
+                            <span className="footer-title-font">Information 👇</span>
+                            <span className="footer-information-contener">
+                                Using an Dollar-Dash is
+                                like having a personal financial
+                                assistant. It helps you spend
+                                wisely, save more, and achieve
+                                your dreams faster. So, start
+                                tracking and take control of
                                 your money today!
-                            </p>
+                            </span>
+                        </div>
+                        <div>
+                            <span className="footer-title-font">Click Me 👇</span>
+                            <div className="click-me-start-here-footer">
+                                <span className="footer-sub-title">Home</span>
+                                <span className="footer-sub-title">My Transition</span>
+                                <span className="footer-sub-title">Add Transition</span>
+                                <span className="footer-sub-title">Signup</span>
+                                <span className="footer-sub-title">Login</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span className="footer-title-font">Start Here 🙂</span>
+                            <div  className="click-me-start-here-footer">
+                                <span className="footer-sub-title">Email :{user?.email}</span>
+                                <span className="footer-sub-title">Name : {user?.name}</span>
+                                <span className="footer-sub-title">Mobile No :{user?.mobile}</span>
+                            </div>
                         </div>
                     </div>
-                    <div >
-                        <h2 className="font-size-footer-h-tag">Click Me 👇</h2>
-                        <div><h1 className="font-size-h">Home</h1></div>
-                        <div><h1 className="font-size-h">My Transition</h1></div>
-                        <div><h1 className="font-size-h">Add Transition</h1></div>
-                        <div><h1 className="font-size-h">Signup</h1></div>
-                        <div><h1 className="font-size-h">Login</h1></div>
-                    </div>
-                    <div >
-                        <h2 className="font-size-footer-h-tag">Start Here 🙂</h2>
-                        <div><h1 className="font-size-h">Email :{user?.email} </h1></div>
-                        <div><h1 className="font-size-h">Name : {user?.name}</h1></div>
-                        <div><h1 className="font-size-h">Mobile No :{user?.mobile}</h1></div>
-                    </div>
+                   
                 </div>
             </div>
         </>

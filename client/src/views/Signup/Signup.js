@@ -64,7 +64,7 @@ function Signup() {
         <Navbar/>
 
             <div className="signup-container">
-                <h1 className="text-center">Signup</h1>
+                <span className="signup-heading">Signup</span>
                 <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="Name" className="input-box" />
                 <input type="text" value={mobile} onChange={(e) => { setMobile(e.target.value) }} placeholder="Mobile" className="input-box" />
                 <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="Email" className="input-box" />
@@ -74,7 +74,7 @@ function Signup() {
                     <p className="radio-container">female <input type="radio" onChange={(e) => { setGender(e.target.value) }} className="input-radio" value="female" name="gender" /></p>
                 </div>
 
-                <button type="button" className="btn btn-signup" onClick={loadSignup}>signup</button>
+                <button type="button" className=" btn-signup" onClick={loadSignup}>signup</button>
 
             </div>
             <Footer/>
