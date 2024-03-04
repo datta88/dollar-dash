@@ -66,16 +66,16 @@ function Update() {
             <Navbar />
 
             <div className="mytransition-container">
-                <h1 className="text-center-add-con">Add Transition</h1>
+               <div className="heading-contener-add"> <span>Update Transition</span></div>
 
                 <div className="select-add-main">
 
-                    <div className="flex-box">
+                    <div className="flex-gred">
                         <div>
-                            <h1 className="font-style">Category :</h1>
+                            <span className="title-font">Category :</span>
                         </div>
                         <div>
-                            <select className="select-container-add width-add" value={category} onChange={(e) => { setCategory(e.target.value) }}>
+                            <select className="select-container-add" value={category} onChange={(e) => { setCategory(e.target.value) }}>
                                 <option>shopping</option>
                                 <option>food</option>
                                 <option>rent</option>
@@ -88,47 +88,36 @@ function Update() {
                         </div>
                     </div>
 
-                    <div className="flex-box">
-                        <div><h1 className="font-style">Amount :</h1></div>
+                    <div className="flex-gred">
+                        <div><span className="title-font">Amount :</span></div>
                         <div>
-                            <input
-                                className="input-amount-container width-add"
-                                type="text"
-                                value={amount}
-                                onChange={(e) => { setAmount(e.target.value) }} />
+                            <input className=" input-amount-container" type="text" value={amount} onChange={(e) => { setAmount(e.target.value) }} />
                         </div>
                     </div>
 
-                    <div className="flex-box">
+                    <div className="flex-gred">
                         <div>
-                            <h1 className="font-style">Description :</h1>
+                            <span className="title-font">Description :</span>
                         </div>
                         <div>
-                            <textarea className=" input-amount-container width-add" type="text" value={description} onChange={(e) => { setDescription(e.target.value) }}  ></textarea>
+                            <textarea className=" input-amount-container " type="text" value={description} onChange={(e) => { setDescription(e.target.value) }}  ></textarea>
                         </div>
                     </div>
 
-                    <div className="flex-box ">
+                    <div className="flex-gred ">
                         <div >
-                            <h1 className="font-style">Type :</h1>
+                            <span className="title-font">Type :</span>
                         </div>
-                        <div>
-                            <div className="crdr-flex">
-                                <div>
-                                    <p className="paragraph-add-container ">credit
-                                     <input type="radio" value="credit" checked={type === 'credit'} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }}  name="radio" /></p>
-                                </div>
-                                <div>
-                                    <p className="paragraph-add-container">Debit 
-                                    <input type="radio" value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" />
-                                    </p>
-                                </div>
-                            </div>
+                        <div className="crdr-flex-gred">
+                            <span className="credit-debit-title">Credit  <input type="radio" value="credit" checked={type === 'credit'} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }}  name="radio" /> </span>
+                            <span className="credit-debit-title">Debit <input type="radio" value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" /></span>
                         </div>
                     </div>
+
+                   
 
                 </div>
-                <div className=" btn-add">
+                <div>
                     <button className="btn btn-add" type="button" onClick={updateAdd}>Update</button>
                 </div>
             </div>

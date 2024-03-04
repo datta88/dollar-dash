@@ -39,10 +39,10 @@ function Login (){
             <div>
                 
                 <div className='login-container'>
-                <h1 className='login-heading'>Login</h1>
+                <span className='login-heading'>Login</span>
                     <input type='email' value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email' className='login-input' />
-                    <input type='email' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className='login-input' />
-                    <button type='button' className='btn btn-login' onClick={loadLogin} >Login</button>
+                    <input type='password' value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' className='login-input' />
+                    <button type='button' className='btn-login' onClick={loadLogin} >Login</button>
                 </div>
             </div>
             <Footer/>

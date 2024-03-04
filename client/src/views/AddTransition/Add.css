@@ -1,75 +1,83 @@
 .mytransition-container {
-    width: 400px;
+    width: 50%;
+    height: fit-content;
     background: #fff;
-    padding: 10px 20px;
+    padding: 1px 2px;
     margin: 100px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 7px 0px #ffc2b3;
 }
-
-.text-center-add-con {
-    display: block;
-    margin: 10px auto;
+.heading-contener-add{
+     font-size: 25px;
     font-weight: 600;
-    width: fit-content;
+    font-family: arial;
+    margin-top: 15px;
+    margin-bottom: 30px;
+   text-align: center;
+  }
+.select-add-main{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
 }
-
-.select-container-add {
+.flex-gred{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-bottom: 30px;
+}
+.title-font{
     font-size: 20px;
-    border: none;
-    border-bottom: 1px solid black;
-    display: block;
-    margin: 40px;
-    padding: 5px 20px;
+    font-weight: 600;
+    font-family: arial;
 }
-
+.select-container-add{
+    font-size: 18px;
+    width: 200px;
+    font-family: arial;
+    font-weight: 400;
+    border: none;
+    border-bottom:1px solid gray ;
+}
 .input-amount-container {
-    font-size: 20px;
-    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: arial;
+    width: 195px;
     border: none;
-    border-bottom: 1px solid black;
-    margin: 30px;
-    padding: 5px 20px;
-
+    border-bottom: 1px solid gray;
 }
 
-.crdr-flex {
-    display: flex;
-    align-items: center;
+.crdr-flex-gred{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
 }
-
-.paragraph-add-container {
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    margin: 30px;
-    width: 75px;
+.type-container{
+    font-size: 18px;
+    font-family: arial;
+    font-weight: 400;
+    color: black;
 }
-
+.credit-debit-title{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: arial;
+}
 .btn-add {
     display: block;
     margin: 20px auto;
-    font-size: 30px;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: 600;
+    padding: 7px 100px;
+    border-radius: 10px;
+    border: 1px solid #b66e5c;
+    background-color: #fff;
 }
-
-.flex-box {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
+.btn-add:hover{
+    background-color: #ffc2b3;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 0px #ffc2b3;    
 }
-
-.font-style {
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.width-add {
-    width: 100px;
-}
-
-.margin-add-type {
-    margin-left: 18px;
-}
-
 @media screen and (max-width:768px) {
     .mytransition-container {
         width: fit-content;
