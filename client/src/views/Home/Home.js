@@ -12,7 +12,7 @@ function Home() {
                 <div className="home-img-cover-black">
                     <span className="brand-title-home"> Dollar Dash</span>
                    <div className="home-input-contener">
-                   <span className="brand-input-box-home">Email Address</span>
+                   <span className="brand-input-box-home">Search</span>
                     <span className="home-submit-btn">Submit</span>
                    </div>
                 </div>
