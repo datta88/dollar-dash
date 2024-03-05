@@ -3,6 +3,7 @@ import Navbar from "./../../componant/Navbar/Navbar";
 import axios from 'axios';
 import './Update.css';
 import { useParams } from "react-router-dom";
+import Footer from "../../componant/Footer/Footer";
 
 function Update() {
     const [amount, setAmount] = useState('');
@@ -121,6 +122,7 @@ function Update() {
                     <button className="btn btn-add" type="button" onClick={updateAdd}>Update</button>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
