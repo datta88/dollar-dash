@@ -98,13 +98,13 @@ function Add() {
                         </div>
                         <div className="crdr-flex-gred">
                             <span className="credit-debit-title">Credit <input type="radio" value="credit" checked={type === "credit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" /></span>
-                            <span className="credit-debit-title">Debit <input type="radio" value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" /></span>
+                            <span className="credit-debit-title">Debit <input type="radio"  value="debit" checked={type === "debit"} onChange={(e) => { if (e.target.checked) { setType(e.target.value) } }} name="radio" /></span>
                         </div>
                     </div>
 
                 </div>
                 <div>
-                    <button className="btn btn-add" type="button" onClick={loaddata}><span>Add</span> </button>
+                    <button className=" btn-add" type="button" onClick={loaddata}><span>Add</span> </button>
                 </div>
             </div>
             <Footer />
